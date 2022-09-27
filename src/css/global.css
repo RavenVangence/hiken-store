@@ -1,0 +1,41 @@
+@import 'home.css';
+@import 'navbar.css';
+@import 'products.css';
+
+
+:root {
+    /* COLORS */
+    --black: #111111;
+    --light-orange: #FD841F;
+    --dark-orange: #E14D2A;
+    --dark-maroon: #4C0033;
+    --regular-maroon: #CD104D;
+    --purple: #790252;
+    --regular-purple: #AF0171;
+    --light-purple: #E80F88;
+
+    /* FONT-FAMILY */
+    --main-font: 'Roboto Condensed', sans-serif;
+    --logo-font: 'Fredericka the Great', cursive;
+}
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+html::-webkit-scrollbar {
+    width: .8vw;
+}
+html::-webkit-scrollbar-thumb {
+    background-color: #ccc;
+}
+html::-webkit-scrollbar-track {
+    background-color: #555
+}
+
+.app-container {
+    width: 100%;
+    overflow-x: hidden;
+}
