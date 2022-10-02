@@ -2,35 +2,16 @@ import React, { useEffect, useState } from 'react';
 import { AnimatePresence, motion } from "framer-motion";
 
 // IMAGES
-import homeWallClothing from '../pictures/wall-1-clothes.jpg'
-import homeWallFurniture from '../pictures/wall-2-furniture.jpg'
-import homeWallElectronics from '../pictures/wall-3-electronics.jpg'
-import homeWallShores from '../pictures/wall-4-shoes.jpg'
+import homeWallMens from '../pictures/wall-1-mens-clothing.jpg'
+import homeWallWomens from '../pictures/wall-2-womens-clothing.jpg'
+import homeWallElectronics from '../pictures/wall-3-tech-1.jpg'
+import homeWallJewelry from '../pictures/wall-4-jewelry-1.jpg'
 
 // ICONS
 import {FaAngleLeft, FaAngleRight} from 'react-icons/fa'
 
-const carouselVariants = {
-  before: {
-    x: '-100vw'
-  },
-  static: {
-    x: 0 , 
-    transition:{
-      type: 'easeInOut', 
-      duration: 1
-    },
-  exit: {
-    x: '100vw', 
-    transition: { 
-      type: 'easeInOut', 
-      duration: 1
-    }
-  }
-  }
-}
-
 const Home = () => {
+
   const [idMatcher, setIdMatcher] = useState(0);
 
   useEffect(() => {
@@ -48,10 +29,10 @@ const Home = () => {
     }
   },[idMatcher]) 
   const carousel = [
-    {src: homeWallClothing, id: 0, phrase: {text:'More Fashion For Less', phraseId:'clothes-1'}},
-    {src: homeWallFurniture, id: 1, phrase: {text:'Turn Your House Into A Home', phraseId:'furniture-1'}},
+    {src: homeWallMens, id: 0, phrase: {text:'Men\'s Fashion', phraseId:'clothes-1'}},
+    {src: homeWallWomens, id: 1, phrase: {text:'Women\'s Fashion', phraseId:'furniture-1'}},
     {src: homeWallElectronics, id: 2, phrase: {text:'Stay Connected', phraseId:'electronics-1'}},
-    {src: homeWallShores, id: 3, phrase: {text: 'Hop Into our Shoes Collection', phraseId:'shoes-1'}}
+    {src: homeWallJewelry, id: 3, phrase: {text: 'Jewelry', phraseId:'shoes-1'}}
   ]
 
 
