@@ -49,7 +49,7 @@ const Home = () => {
               src={src}
               initial={{x: '-100vw'}}
               animate={{x: 0 }}
-              transition={{type: 'easeInOut', duration: 1}}
+              transition={{type: 'easeInOut', duration: .1}}
               exit={{x: '100vw' }}
               className='home-image'
             />
@@ -61,7 +61,7 @@ const Home = () => {
               key={phrase.phraseId}
               initial={{x: '-100vw'}}
               animate={{x: 0 }}
-              transition={{type: 'easeInOut', duration: 1}}
+              transition={{type: 'easeInOut', duration: .1}}
               exit={{x: '100vw' }}
               className='caption-container'
             >

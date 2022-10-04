@@ -16,13 +16,12 @@ function Products() {
       const data = response.data;
       setProducts(data);
       setHasLoaded(true);
-      console.log(data);
     }
     fetchData();
   },[])
   return (
     <div className='products-container'>
-      {hasLoaded && products.map((item) => {
+      {hasLoaded ? products.map((item) => {
         const {id, title, image, price} = item;
 
         return (
@@ -32,9 +31,12 @@ function Products() {
             <h2>$ {price}</h2>
           </div>
         )
-      })}
+      }) : <Loader/>  }
     </div>
-  )
+  ) 
 }
-
+const Loader = () => {
+  return <div className='loader'>
+  </div>
+}
 export default Products;
