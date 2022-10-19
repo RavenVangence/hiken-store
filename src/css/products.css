@@ -9,7 +9,12 @@
     padding-top: 2.5rem;
     flex-wrap: wrap;
 }
-
+.no-products-modal {
+    margin-top: 5rem;
+    height: 10rem;
+    font-family: var(--main-font);
+    color: var(--light-orange);
+}
 .product-container {
     background-color: #fff;
     font-family: var(--main-font);
