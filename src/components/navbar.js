@@ -4,7 +4,13 @@ import React from 'react';
 import {FaSearch, FaShoppingCart, FaUserAlt} from 'react-icons/fa';
 import {GiFireAce} from 'react-icons/gi';
 
-const navbar = () => {
+//REDUX
+import { useDispatch, useSelector } from 'react-redux';
+import {setIsCartOpenTrue} from '../features/products/cart-slice.js'
+
+const Navbar = () => {
+  const dispatch = useDispatch();
+
   return <>
     <section className='navbar-container'>
         <div className='logo-container'>
@@ -16,11 +22,15 @@ const navbar = () => {
             <FaSearch id='search-icon'/>
         </div>
         <div className="cart-user-container">
-            <FaShoppingCart id='cart-icon'/>
+            <FaShoppingCart 
+              id='cart-icon' 
+              onClick={() => {
+                dispatch(setIsCartOpenTrue())
+              }}/>
             <FaUserAlt id='user-icon'/>
         </div>
     </section>
   </>
 }
 
-export default navbar;
+export default Navbar;

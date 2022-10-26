@@ -10,6 +10,7 @@ import { useDispatch, useSelector } from 'react-redux';
 
 // REDUX REDUCERS
 import {addProductsFunc} from '../features/products/products-slice.js';
+import {addViewedProductFunc, setAddedItemModalFalse} from '../features/products/product-view-slice.js';
 
 function Products() {
 
@@ -42,7 +43,18 @@ function Products() {
         const {id, title, image, price} = item;
 
         return (
-          <div key={id} className='product-container'>
+          <div key={id} className='product-container' onClick={() => {
+            const fetchData = async () => {
+              const response = await axios({
+                method: 'get', 
+                url: `http://localhost:8000/products/${id}`
+              })
+              dispatch(setAddedItemModalFalse());
+              const data = [response.data];
+              dispatch(addViewedProductFunc(data));
+          }
+          fetchData();
+          }}>
             <h4 className='product-heading'>{title}</h4>
             <img src={image} alt={title} className='product-image' />
             <h2>$ {price}</h2>

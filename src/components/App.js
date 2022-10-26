@@ -3,24 +3,29 @@ import React from 'react';
 import Navbar from './navbar.js';
 import Home from './home';
 import Products from './products.js';
+import ProductView from './product-view.js';
+import Cart from './cart.js';
 
 //CSS
 import '../css/global.css';
 
-// REDUX
-import { store } from './store.js';
-import { Provider } from 'react-redux';
-
+//REDUX
+import {useDispatch, useSelector} from 'react-redux';
 
 const App = () => {
-  
-  return <Provider store={store}>
+  const dispatch = useDispatch();
+  const {isBeingViewed} = useSelector((store) => store.productView)
+  const {isCartOpen} = useSelector((store) => store.cartSlice)
+
+  return (
     <div className='app-container'>
       <Navbar/>
       <Home/>
       <Products/>
+      {isBeingViewed && <ProductView/>}
+      {isCartOpen && <Cart/>}
     </div>
-  </Provider>
+  )
   
   
 

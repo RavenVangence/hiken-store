@@ -2,6 +2,8 @@
 @import 'navbar.css';
 @import 'products.css';
 @import 'filter.css';
+@import 'product-view.css';
+@import 'cart.css';
 
 :root {
     /* COLORS */
