@@ -31,7 +31,7 @@
 }
 .cross-icon-btn {
     position: absolute;
-    right: 2rem;
+    right: 1rem;
     cursor: pointer;
     background-color: transparent;
     border: none;
@@ -79,12 +79,12 @@
 
 .added-item-modal {
     display: flex;
-    width: 40%;
+    width: 60%;
     justify-content: center;
     position: fixed;
     bottom: 2rem;
     margin-right: 5%;
-    margin-left: 5%;
+    margin-left: 20%;
     text-align: center;
     color: var(--dark-orange);
     background-color: var(--black);
