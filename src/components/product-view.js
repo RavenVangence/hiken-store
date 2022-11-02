@@ -78,7 +78,7 @@ function ProductView() {
                                     }
                                     <motion.button 
                                         className='add-item-to-cart-btn'
-                                        whileHover={{scale: 1.1}}
+                                        whileHover={{scale: 1.05}}
                                         whileTap={{scale: 1}} 
                                         onClick={ () => { 
                                             dispatch(setAddedItemModalTrue())

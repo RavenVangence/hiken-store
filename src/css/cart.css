@@ -89,15 +89,19 @@
 }
 
 .cart-footer-container {
-    display: flex;
-    width: 49%;
-    height: 6rem;
-    /* margin-right: 1%; */
-    /* margin-left: 1%; */
-    flex-direction: column;
+    font-family: var(--main-font);
+    z-index: 7;
     position: fixed;
+    display: flex;
+    width: 47%;
+    height: 6rem;
+    margin-right: 2%;
+    margin-left: 2%;
+    flex-direction: column;
+    right: 0rem;
     bottom: 0;
-
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
     background-color: var(--black);
     color: var(--dark-orange);
 }

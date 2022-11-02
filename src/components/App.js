@@ -10,11 +10,10 @@ import Cart from './cart.js';
 import '../css/global.css';
 
 //REDUX
-import {useDispatch, useSelector} from 'react-redux';
+import {useSelector} from 'react-redux';
 import { AnimatePresence } from 'framer-motion';
 
 const App = () => {
-  const dispatch = useDispatch();
   const {isBeingViewed} = useSelector((store) => store.productView)
   const {isCartOpen} = useSelector((store) => store.cartSlice)
 
@@ -26,7 +25,9 @@ const App = () => {
       <AnimatePresence>
         {isBeingViewed && <ProductView/>}
       </AnimatePresence>
-      {isCartOpen && <Cart/>}
+      <AnimatePresence>
+        {isCartOpen && <Cart/>}
+      </AnimatePresence>
     </div>
   )
   

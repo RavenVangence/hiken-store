@@ -30,7 +30,7 @@
     font-size: 1.6rem;
 }
 .cross-icon-btn {
-    position: absolute;
+    position: fixed;
     right: 1rem;
     cursor: pointer;
     background-color: transparent;
