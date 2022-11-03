@@ -10,8 +10,8 @@ const cartRoutes = require('../server/routes/cart/cart-route.js')
 app.use(cors());
 app.use('/', homeRoutes);
 app.use('/cart/item', cartRoutes);
-app.use(express.urlencoded({extended: false}));
-app.use(express.json());
+// app.use(express.urlencoded({extended: false}));
+// app.use(express.json());
 
 app.get('/', (req, res) => {
     res.send('test successful');
