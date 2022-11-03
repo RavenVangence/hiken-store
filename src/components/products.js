@@ -12,6 +12,9 @@ import { useDispatch, useSelector } from 'react-redux';
 import {addProductsFunc} from '../features/products/products-slice.js';
 import {addViewedProductFunc, setAddedItemModalFalse} from '../features/products/product-view-slice.js';
 
+// ICONS
+import {GiFireAce} from 'react-icons/gi';
+
 function Products() {
 
   const dispatch = useDispatch();
@@ -21,7 +24,7 @@ function Products() {
     const fetchData = async () => {
       const response = await axios({
         method: 'get', 
-        url: 'http://localhost:8000/products'
+        url: 'https://firefist-store.herokuapp.com/products'
       })
       const data = response.data;
       dispatch(addProductsFunc(data));
@@ -36,7 +39,7 @@ function Products() {
 
       { noProductsFoundModalData[0] ?
           <h1 className='no-products-modal'>{noProductsFoundModalData[1]}</h1>
-        : null
+        : false
       }
 
       {isLoading ? <Loader/> : initialProducts.map((item) => {
@@ -47,7 +50,7 @@ function Products() {
             const fetchData = async () => {
               const response = await axios({
                 method: 'get', 
-                url: `http://localhost:8000/products/${id}`
+                url: `https://firefist-store.herokuapp.com/products/${id}`
               })
               dispatch(setAddedItemModalFalse());
               const data = [response.data];
@@ -61,6 +64,7 @@ function Products() {
           </div>
         )
       })}
+    <Footer/>
     </div>
   ) 
 }
@@ -69,4 +73,25 @@ const Loader = () => {
   </div>
 }
 
+const Footer = () => {
+
+  return (
+    <footer className='main-footer-container'>
+      <div>
+        <GiFireAce className='footer-fire-icon'/>
+      </div>
+      <div>
+        <h1>
+        Copyright © 2022 Raven
+        </h1>
+        <div className='footer-link-container'>
+          <h5>Cookies</h5>
+          <h5>Security</h5>
+          <h5>Terms of Service</h5>
+          <h5>Privacy Statement</h5>
+        </div>
+      </div>
+    </footer>
+  )
+}
 export default Products;

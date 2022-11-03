@@ -44,11 +44,41 @@
     border: 10px solid;
     border-radius: 50%;
     border-color: var(--light-orange) transparent;
-    animation: loader 1.5s ease-in infinite;
+    animation: loader 1.5s ease infinite;
 }
 
 @keyframes loader {
     to {
         transform: rotate(360deg);
     }
+}
+
+.main-footer-container {
+    width: 100%;
+    height: 60vh;
+    display: flex;
+    background-color: #050505;
+    flex-direction: row;
+    align-items: center;
+    margin-top: 5rem;
+    color: var(--white);
+    font-family: var(--main-font);
+}
+.footer-fire-icon {
+    width: 15rem;
+    height: 15rem;
+    color: var(--light-orange);
+}
+.footer-link-container {
+    display: flex;
+    flex-direction: row;
+    margin-top: 1rem;
+}
+.footer-link-container > h5 {
+    margin: 0 1rem 0 0;
+}
+
+.footer-link-container > h5:hover {
+    color: #ccc;
+    cursor: pointer;
 }

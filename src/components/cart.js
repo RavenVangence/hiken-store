@@ -39,7 +39,7 @@ function Cart() {
                                           key='heading-1'
                                           initial={{y: '4rem'}}
                                           animate={{y: 0}}
-                                          exit={{y: '100vh', scale: 0, opacity: 0}}
+                                          exit={{x: '-100vh', scale: 0, opacity: 0}}
                                           >Your Shopping Cart Is Empty</motion.h2> : 
                                           <motion.h1
                                             key='heading-2'

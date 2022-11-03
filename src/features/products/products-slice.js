@@ -122,7 +122,7 @@ const productsSlice = createSlice( {
         },
         setAllFilterOff: (state, action) => {
             const data = action.payload;
-
+            state.noProductsFoundModalData[0] = false;
             state.initialProducts = data;
             state.categoryFilterMode['isMenChecked'] = false;
             state.categoryFilterMode['isWomenChecked'] = false;
