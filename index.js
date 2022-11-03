@@ -12,8 +12,8 @@ app.use('/', homeRoutes);
 app.use('/cart/item', cartRoutes);
 
 
-app.listen(8000, console.log('listening on port 8000'));
+app.listen(process.env.PORT || 8000, console.log('listening on port 8000'));
 
 app.get('/', (req, res) => {
-    res.send('HULK');
+    res.send('test successful');
 });
