@@ -1,7 +1,6 @@
 const express = require('express');
 const app = express();
 
-const port = process.env.PORT || 8000 ;
 const cors = require('cors');
 // R O U T E S
 const homeRoutes = require('../server/routes/home/products-route')
@@ -16,4 +15,4 @@ app.get('/', (req, res) => {
     res.send('test successful');
 });
 
-app.listen(port, console.log('listening on port 8000'));
+app.listen(process.env.PORT || 8000, console.log('listening on port 8000'));
