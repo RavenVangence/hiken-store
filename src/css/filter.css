@@ -98,6 +98,7 @@
 }
 .price-range-container {
     -webkit-appearance: none;
+    appearance: none;
     position: relative;
     bottom: -1rem;
     display: flex;
