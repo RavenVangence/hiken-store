@@ -1,8 +1,8 @@
 @media screen and (min-width: 0px) and (max-width: 480px) {
 
-    .navbar-container {
+.navbar-container {
     position: fixed;
-    height:10vh;
+    height: 10vh;
     width: 100%;
     display: flex;
     flex-direction: row;
@@ -76,7 +76,74 @@
 
 
 
+@media screen and (min-width: 769px) and (max-width: 1024px) {
+.navbar-container {
+    position: fixed;
+    height: 11%;
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    background-color: var(--black);
+    z-index: 2;
+}
 
+.navbar-container > div {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+}
+.logo-container {
+    margin-left: 1.5rem;
+}
+#fire-ace-icon {
+    width: 3.5rem;
+    height: 3.5rem;
+    color: #fff;
+}
+#fire-ace-icon + h1 {
+    font-family: var(--logo-font);
+    letter-spacing: .3rem;
+    font-size: 1.8rem;
+    color: #fff;
+}
+.search-container > input {
+    width: 30rem;
+    height: 1.8rem;
+    padding: 5px;
+    border: none;
+    outline: none;
+    font-family: var(--main-font);
+    font-weight: bold;
+}
+#search-icon {
+    width: 1.5rem;
+    height: 1.5rem;
+    margin-left: 1rem;
+    cursor: pointer;
+    color: var(--dark-orange);
+}
+.cart-user-container {
+    margin-right: 1.5rem;
+}
+#cart-icon {
+    width: 1.5rem;
+    height: 1.5rem;
+    margin-right: 1rem ;
+    margin-top: 2px;
+    cursor: pointer;
+    color: var(--dark-orange);
+}
+#user-icon {
+    width: 1.5rem;
+    height: 1.5rem;
+    margin-left: .5rem;
+    cursor: pointer;
+    color: var(--dark-orange);
+}
+}
 
 /* 
 .navbar-container {

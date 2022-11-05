@@ -1,3 +1,5 @@
+@media screen and (min-width: 0px) and (max-width: 480px) {
+    
 .cart-container {
     position: fixed;
     top: 11%;
@@ -124,4 +126,5 @@
     background-color: var(--dark-orange);
     cursor: pointer;
     margin: .5rem 1rem;
+}
 }

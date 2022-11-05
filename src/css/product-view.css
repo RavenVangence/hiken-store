@@ -1,4 +1,5 @@
-.product-view-container {
+@media screen and (min-width: 0px) and (max-width: 480px) {
+    .product-view-container {
     font-family: var(--main-font);
     color: var(--black);
     position: fixed;
@@ -90,4 +91,5 @@
     background-color: var(--black);
     border: 2.5px solid var(--black);
     border-radius: 5px;
+}
 }
