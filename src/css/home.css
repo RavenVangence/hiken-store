@@ -3,7 +3,7 @@
     position: absolute;
     top: 10vh;
     left: 0;
-    width: 200%;
+    width: 100%;
     height: 100%;
     overflow: hidden;
     background-color: var(--black);
@@ -108,6 +108,62 @@
 
 
 @media screen and (min-width: 769px) and (max-width: 1024px) {
+.home-container {
+    position: absolute;
+    top: 9vh;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+    background-color: var(--black);
+    font-family: var(--main-font);
+}
+.home-image {
+    width: 100%;
+    height: 100%;
+    filter: brightness(.3);
+}
+.caption-container {
+    position: absolute;
+    top: 4rem;
+    width: 100%;
+    text-align: center;
+}
+.caption {
+    font-size: 2.5rem;
+    letter-spacing: .2rem;
+    margin: auto;
+    text-shadow: 2px 1px rgb(179, 178, 178);
+    color: #fff;
+}
+.carousel-btn {
+    position: absolute;
+    background-color: transparent;
+    border: none;
+    border-radius: 10%;
+    cursor: pointer;
+    z-index: 1;
+    top: 35%;
+    box-shadow: 0px 0px 10px var(--light-orange);
+}
+#back-btn {
+    left: 2rem;
+}
+#next-btn {
+    right: 2rem;
+}
+.carousel-icons {
+    width: 2rem;
+    height: 3rem;
+    color: var(--light-orange);
+}
+}
+
+
+
+
+
+@media screen and (min-width: 1024px) {
     .home-container {
     position: absolute;
     top: 11vh;
@@ -157,7 +213,6 @@
     color: var(--light-orange);
 }
 }
-
 
 /* 
 .home-container {

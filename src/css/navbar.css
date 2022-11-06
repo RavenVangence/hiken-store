@@ -3,6 +3,83 @@
 .navbar-container {
     position: fixed;
     height: 10vh;
+    width: 50%;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    background-color: var(--black);
+    z-index: 2;
+}
+
+.navbar-container > div {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+}
+.logo-container {
+    margin-left: 1.5rem;
+}
+#fire-ace-icon {
+    width: 2rem;
+    height: 2rem;
+    color: #fff;
+}
+#fire-ace-icon + h1 {
+    font-family: var(--logo-font);
+    letter-spacing: .3rem;
+    /* font-size: 1rem; */
+    color: #fff;
+}
+.search-container > input {
+    width:1rem;
+    height: 1.8rem;
+    padding: 5px;
+    border: none;
+    outline: none;
+    font-family: var(--main-font);
+    font-weight: bold;
+}
+#search-icon {
+    width: 1.5rem;
+    height: 1.5rem;
+    /* margin-left: 1rem; */
+    cursor: pointer;
+    color: var(--dark-orange);
+}
+.cart-user-container {
+    margin-right: 1.5rem;
+}
+#cart-icon {
+    width: 1.5rem;
+    height: 1.5rem;
+    /* margin-right: 1rem ; */
+    margin-top: 2px;
+    cursor: pointer;
+    color: var(--dark-orange);
+}
+#user-icon {
+    width: 1.5rem;
+    height: 1.5rem;
+    /* margin-left: .5rem; */
+    cursor: pointer;
+    color: var(--dark-orange);
+}
+
+}
+
+
+
+
+
+
+
+
+@media screen and (min-width: 769px) and (max-width: 1024px) {
+.navbar-container {
+    position: fixed;
+    height: 9%;
     width: 100%;
     display: flex;
     flex-direction: row;
@@ -29,12 +106,12 @@
 #fire-ace-icon + h1 {
     font-family: var(--logo-font);
     letter-spacing: .3rem;
-    font-size: 1rem;
+    font-size: 1.5rem;
     color: #fff;
 }
 .search-container > input {
-    width: 10rem;
-    height: 1.8rem;
+    width: 25rem;
+    height: 1.5rem;
     padding: 5px;
     border: none;
     outline: none;
@@ -42,8 +119,8 @@
     font-weight: bold;
 }
 #search-icon {
-    width: 1.5rem;
-    height: 1.5rem;
+    width: 1.3rem;
+    height: 1.3rem;
     margin-left: 1rem;
     cursor: pointer;
     color: var(--dark-orange);
@@ -52,32 +129,25 @@
     margin-right: 1.5rem;
 }
 #cart-icon {
-    width: 1.5rem;
-    height: 1.5rem;
+    width: 1.3rem;
+    height: 1.3rem;
     margin-right: 1rem ;
     margin-top: 2px;
     cursor: pointer;
     color: var(--dark-orange);
 }
 #user-icon {
-    width: 1.5rem;
-    height: 1.5rem;
+    width: 1.3rem;
+    height: 1.3rem;
     margin-left: .5rem;
     cursor: pointer;
     color: var(--dark-orange);
 }
-
 }
 
 
-
-
-
-
-
-
-@media screen and (min-width: 769px) and (max-width: 1024px) {
-.navbar-container {
+@media screen and (min-width: 1024px) {
+    .navbar-container {
     position: fixed;
     height: 11%;
     width: 100%;
@@ -144,7 +214,6 @@
     color: var(--dark-orange);
 }
 }
-
 /* 
 .navbar-container {
     position: fixed;
