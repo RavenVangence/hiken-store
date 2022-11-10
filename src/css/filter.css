@@ -214,11 +214,11 @@
     align-items: center;
 }
 .filter-on-container > h1 {
-    font-size: 1.3rem;
+    font-size: 1.2rem;
     margin-bottom: .5rem;
 }
 .filter-off-container > h1 {
-    font-size: 1.3rem;
+    font-size: 1.2rem;
     margin-bottom: .5rem;
 }
 .filter-icon {
@@ -239,7 +239,7 @@
 }
 .filter-type-text-align {
     text-align: center;
-    font-size: 1.2rem;
+    font-size: 1rem;
 }
 .checkbox-li-item {
     position: relative;
@@ -252,8 +252,8 @@
 }
 .filter-category-icon {
     color: var(--light-orange);
-    width: 1.5rem;
-    height: 1.5rem;
+    width: 1.25rem;
+    height: 1.25rem;
 }
 .price-range-container {
     -webkit-appearance: none;
@@ -268,8 +268,8 @@
 #range::-webkit-slider-thumb {
     -webkit-appearance: none;
     appearance: none;
-    width: 15px;
-    height: 15px;
+    width: 13px;
+    height: 13px;
     border-radius: 50%; 
     background: var(--light-orange);
     cursor: pointer;
@@ -277,18 +277,18 @@
 }
 #range::-webkit-slider-thumb:hover {
     opacity: 1;
-    width: 17px;
-    height: 17px;
+    width: 15px;
+    height: 15px;
 }
 #range {
     background: var(--dark-orange);
-    height: 7px;
+    height: 5px;
     border-radius: 5px;
     margin-top: 5px;
     appearance: none;
     border: none;
     outline: none;
-    width: 12rem;
+    width: 10rem;
 }
 .price-range-container > h4 {
     margin-top: 15px;
@@ -301,8 +301,8 @@
     margin-top: 15px;
 }
 .star-icon {
-    width: 1.5rem;
-    height: 1.5rem;
+    width: 1.25rem;
+    height: 1.25rem;
     margin-right: 5px;
     margin-left: 5px;
     color: var(--light-orange);
