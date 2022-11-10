@@ -81,7 +81,7 @@ const Footer = () => {
         <GiFireAce className='footer-fire-icon'/>
       </div>
       <div>
-        <h1>
+        <h1 className='footer-copyright-container'>
         Copyright © 2022 Raven
         </h1>
         <div className='footer-link-container'>

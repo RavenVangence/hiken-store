@@ -27,8 +27,8 @@
     margin: 0;
     box-sizing: border-box;
 }
-
-html::-webkit-scrollbar {
+@media  screen and (min-width: 769px) {
+    html::-webkit-scrollbar {
     width: .8vw;
 }
 html::-webkit-scrollbar-thumb {
@@ -41,6 +41,7 @@ html::-webkit-scrollbar-track {
 .app-container {
     width: 100vw;
     overflow-x: hidden;
+}
 }
 
 

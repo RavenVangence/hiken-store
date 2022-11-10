@@ -1,5 +1,5 @@
 @media screen and (min-width: 0px) and (max-width: 480px) {
-    .products-container {
+.products-container {
     position: absolute;
     top: calc(50vh + 14rem);
     width: 100%;
@@ -19,8 +19,8 @@
 .product-container {
     background-color: #fff;
     font-family: var(--main-font);
-    width: 48%;
-    height: 20rem;
+    width: 45%;
+    height: 12rem;
     margin-bottom: 2.5rem;
     border: none;
     display: flex;
@@ -31,14 +31,16 @@
     cursor: pointer;
 }
 .product-heading {
-    font-size: .85rem;
+    font-size: .65rem;
 }
 .product-image {
     max-width: 90%;
     height: 50%;
     justify-self: baseline;
 }
-
+.product-container > h2 {
+    font-size: .8rem;
+}
 .loader {
     width: 200px;
     height: 200px;
@@ -53,7 +55,6 @@
         transform: rotate(360deg);
     }
 }
-
 .main-footer-container {
     width: 100%;
     height: 60vh;
@@ -64,25 +65,30 @@
     margin-top: 5rem;
     color: var(--white);
     font-family: var(--main-font);
+    overflow: hidden;
 }
 .footer-fire-icon {
-    width: 15rem;
-    height: 15rem;
+    width: 10rem;
+    height: 10rem;
     color: var(--light-orange);
+}
+.footer-copyright-container {
+    font-size: 1.5rem;
 }
 .footer-link-container {
     display: flex;
-    flex-direction: row;
+    flex-direction: column;
     margin-top: 1rem;
 }
 .footer-link-container > h5 {
-    margin: 0 1rem 0 0;
+    margin:.5rem 0 0 0;
 }
 
 .footer-link-container > h5:hover {
     color: #ccc;
     cursor: pointer;
 }
+
 }
 
 
