@@ -13,6 +13,7 @@
 .no-products-modal {
     margin-top: 5rem;
     height: 10rem;
+    font-size: 1rem;
     font-family: var(--main-font);
     color: var(--light-orange);
 }
