@@ -86,7 +86,7 @@ function ProductView() {
                                                 try {
                                                     const response = await axios({
                                                     method: 'get', 
-                                                    url: `https://firefist-store.herokuapp.com/cart/item/${id}`
+                                                    url: `https://hiken-store.vercel.app/cart/item/${id}`
                                                 })
                                                 const data = [response.data];
                                                 dispatch(addToCart(data));

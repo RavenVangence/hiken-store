@@ -24,7 +24,7 @@ function Products() {
     const fetchData = async () => {
       const response = await axios({
         method: 'get', 
-        url: 'https://firefist-store.herokuapp.com/products'
+        url: 'https://hiken-store.vercel.app/products'
       })
       const data = response.data;
       dispatch(addProductsFunc(data));
@@ -50,7 +50,7 @@ function Products() {
             const fetchData = async () => {
               const response = await axios({
                 method: 'get', 
-                url: `https://firefist-store.herokuapp.com/products/${id}`
+                url: `https://hiken-store.vercel.app/products/${id}`
               })
               dispatch(setAddedItemModalFalse());
               const data = [response.data];

@@ -29,7 +29,7 @@ function Filter() {
             const fetchData = async () => {
               const response = await axios({
                 method: 'get', 
-                url: 'https://firefist-store.herokuapp.com/products'
+                url: 'https://hiken-store.vercel.app/products'
               })
               const data = response.data;
               dispatch(setAllFilter(data));
@@ -43,7 +43,7 @@ function Filter() {
             const fetchData = async () => {
               const response = await axios({
                 method: 'get', 
-                url: 'https://firefist-store.herokuapp.com/products'
+                url: 'https://hiken-store.vercel.app/products'
               })
               const data = response.data;
               dispatch(setAllFilterOff(data));
